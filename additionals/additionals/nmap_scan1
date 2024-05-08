@@ -1,0 +1,47 @@
+# Nmap 7.94 scan initiated Tue May  7 00:50:25 2024 as: nmap -T4 --min-rate 10000 -sCV -p- -A -Pn -oN nmap_scan1 10.15.42.36
+Warning: 10.15.42.36 giving up on port because retransmission cap hit (6).
+Nmap scan report for 10.15.42.36
+Host is up (0.035s latency).
+Not shown: 65532 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+21/tcp   open  ftp     vsftpd 2.0.8 or later
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_Can't get directory listing: PASV IP 172.18.0.3 is not the same as 10.15.42.36
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to 10.33.2.161
+|      Logged in as ftp
+|      TYPE: ASCII
+|      Session bandwidth limit in byte/s is 6250000
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 1
+|      vsFTPd 3.0.5 - secure, fast, stable
+|_End of status
+22/tcp   open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.5 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 ca:12:a1:08:41:b8:5b:01:b2:2b:c6:64:9d:01:ce:e0 (RSA)
+|   256 df:e6:37:47:be:43:54:96:1f:40:43:9b:d7:ac:78:ad (ECDSA)
+|_  256 b5:74:86:8d:ee:74:51:2a:38:09:67:38:7d:a0:e6:c0 (ED25519)
+8888/tcp open  http    Apache httpd 2.4.38 ((Debian))
+|_http-server-header: Apache/2.4.38 (Debian)
+|_http-title: Login Page
+Aggressive OS guesses: Linux 4.15 - 5.8 (96%), Linux 5.3 - 5.4 (95%), Linux 2.6.32 (95%), Linux 5.0 - 5.5 (95%), Linux 3.1 (95%), Linux 3.2 (95%), AXIS 210A or 211 Network Camera (Linux 2.6.17) (95%), ASUS RT-N56U WAP (Linux 3.4) (93%), Linux 3.16 (93%), Linux 5.0 - 5.4 (93%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 7 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 993/tcp)
+HOP RTT      ADDRESS
+1   34.59 ms 10.33.0.1
+2   37.17 ms 10.11.2.81
+3   37.15 ms 10.11.5.5
+4   37.16 ms 10.0.15.250
+5   37.18 ms 10.0.1.46
+6   37.18 ms 10.15.47.250
+7   36.38 ms 10.15.42.36
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue May  7 00:50:54 2024 -- 1 IP address (1 host up) scanned in 29.02 seconds
