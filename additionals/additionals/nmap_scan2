@@ -1,0 +1,34 @@
+# Nmap 7.94 scan initiated Tue May  7 00:51:59 2024 as: nmap -T4 --min-rate 10000 -sCV -p- -A -Pn -oN nmap_scan2 10.15.42.7
+Warning: 10.15.42.7 giving up on port because retransmission cap hit (6).
+Nmap scan report for 10.15.42.7
+Host is up (0.047s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.5 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 9a:ed:52:a9:08:9d:71:6f:d1:24:8f:0b:4a:5b:7a:42 (RSA)
+|   256 00:9c:a8:13:91:9f:4f:74:fb:9e:15:a2:36:6b:c5:ba (ECDSA)
+|_  256 d7:55:ff:d7:95:e1:06:26:81:bc:f2:b4:b5:29:a9:37 (ED25519)
+80/tcp open  http    Apache httpd 2.4.59 ((Debian))
+| http-robots.txt: 1 disallowed entry 
+|_/wp-admin/
+|_http-title: Hello World
+|_http-server-header: Apache/2.4.59 (Debian)
+|_http-generator: WordPress 6.5.2
+Aggressive OS guesses: Linux 4.15 - 5.8 (96%), Linux 5.0 - 5.5 (95%), Linux 3.1 (95%), Linux 3.2 (95%), Linux 5.3 - 5.4 (95%), AXIS 210A or 211 Network Camera (Linux 2.6.17) (95%), Linux 2.6.32 (94%), ASUS RT-N56U WAP (Linux 3.4) (93%), Linux 3.16 (93%), Linux 5.0 (93%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 7 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 1723/tcp)
+HOP RTT      ADDRESS
+1   69.75 ms 10.33.0.1
+2   70.06 ms 10.11.2.81
+3   34.93 ms 10.11.5.5
+4   35.20 ms 10.0.15.250
+5   35.58 ms 10.0.1.46
+6   36.00 ms 10.15.47.250
+7   36.56 ms 10.15.42.7
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue May  7 00:52:31 2024 -- 1 IP address (1 host up) scanned in 32.18 seconds
