@@ -1,0 +1,15 @@
+[apache-detect] [http] [info] http://10.15.42.36:8888/ ["Apache/2.4.38 (Debian)"]
+[php-detect] [http] [info] http://10.15.42.36:8888/ ["7.2.34"]
+[tech-detect:php] [http] [info] http://10.15.42.36:8888/
+[http-missing-security-headers:permissions-policy] [http] [info] http://10.15.42.36:8888/
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://10.15.42.36:8888/
+[http-missing-security-headers:clear-site-data] [http] [info] http://10.15.42.36:8888/
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://10.15.42.36:8888/
+[http-missing-security-headers:referrer-policy] [http] [info] http://10.15.42.36:8888/
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://10.15.42.36:8888/
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://10.15.42.36:8888/
+[http-missing-security-headers:strict-transport-security] [http] [info] http://10.15.42.36:8888/
+[http-missing-security-headers:content-security-policy] [http] [info] http://10.15.42.36:8888/
+[http-missing-security-headers:x-frame-options] [http] [info] http://10.15.42.36:8888/
+[http-missing-security-headers:x-content-type-options] [http] [info] http://10.15.42.36:8888/
+[waf-detect:apachegeneric] [http] [info] http://10.15.42.36:8888/
