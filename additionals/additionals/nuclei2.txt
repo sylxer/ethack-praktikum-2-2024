@@ -1,0 +1,38 @@
+[addeventlistener-detect] [http] [info] http://10.15.42.7/
+[apache-detect] [http] [info] http://10.15.42.7/ ["Apache/2.4.59 (Debian)"]
+[php-detect] [http] [info] http://10.15.42.7/ ["8.2.18"]
+[metatag-cms] [http] [info] http://10.15.42.7/ ["WordPress 6.5.2"]
+[tech-detect:php] [http] [info] http://10.15.42.7/
+[http-missing-security-headers:x-frame-options] [http] [info] http://10.15.42.7/
+[http-missing-security-headers:x-content-type-options] [http] [info] http://10.15.42.7/
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://10.15.42.7/
+[http-missing-security-headers:referrer-policy] [http] [info] http://10.15.42.7/
+[http-missing-security-headers:clear-site-data] [http] [info] http://10.15.42.7/
+[http-missing-security-headers:strict-transport-security] [http] [info] http://10.15.42.7/
+[http-missing-security-headers:content-security-policy] [http] [info] http://10.15.42.7/
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://10.15.42.7/
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://10.15.42.7/
+[http-missing-security-headers:permissions-policy] [http] [info] http://10.15.42.7/
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://10.15.42.7/
+[mixed-passive-content:img] [http] [info] http://10.15.42.7/ ["http://10.15.42.7/wp-content/themes/twentytwentyfour/assets/images/building-exterior.webp","http://10.15.42.7/wp-content/themes/twentytwentyfour/assets/images/tourist-and-building.webp","http://10.15.42.7/wp-content/themes/twentytwentyfour/assets/images/windows.webp"]
+[wordpress-login] [http] [info] http://10.15.42.7/wp-login.php
+[wordpress-readme-file] [http] [info] http://10.15.42.7/readme.html
+[robots-txt-endpoint] [http] [info] http://10.15.42.7/robots.txt
+[missing-sri] [http] [info] http://10.15.42.7/ ["http://10.15.42.7/wp-includes/blocks/navigation/view.min.js?ver=6.5.2"]
+[wordpress-detect:version_by_js] [http] [info] http://10.15.42.7/ ["6.5.2"]
+[waf-detect:apachegeneric] [http] [info] http://10.15.42.7/
+[wordpress-forminator:outdated_version] [http] [info] http://10.15.42.7/wp-content/plugins/forminator/readme.txt ["1.24.6"] [last_version="1.28.0"]
+[oob-header-based-interaction:dns] [http] [info] http://10.15.42.7/
+[oob-header-based-interaction:dns] [http] [info] http://10.15.42.7/
+[wordpress-user-enum] [http] [info] http://10.15.42.7/?author=1 ["author/admin"]
+[wordpress-rdf-user-enum] [http] [info] http://10.15.42.7/feed/rdf/ ["admin"]
+[wordpress-xmlrpc-listmethods] [http] [info] http://10.15.42.7/xmlrpc.php
+[wp-license-file] [http] [info] http://10.15.42.7/license.txt
+[wp-user-enum:usernames] [http] [low] http://10.15.42.7/wp-json/wp/v2/users/ ["admin"]
+[wordpress-xmlrpc-file] [http] [info] http://10.15.42.7/xmlrpc.php
+[CVE-2023-48795] [javascript] [medium] 10.15.42.7:22 ["Vulnerable to Terrapin"]
+[ssh-sha1-hmac-algo] [javascript] [info] 10.15.42.7:22
+[ssh-server-enumeration] [javascript] [info] 10.15.42.7:22 ["SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.5"]
+[ssh-password-auth] [javascript] [info] 10.15.42.7:22
+[ssh-auth-methods] [javascript] [info] 10.15.42.7:22 ["["publickey","password"]"]
+[openssh-detect] [tcp] [info] 10.15.42.7:22 ["SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.5"]
